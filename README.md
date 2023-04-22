@@ -1,5 +1,5 @@
 # Ceci Au's Portfolio (React)
-- Visit here: https://www.ceciaups.com/
+- Visit here: https://ceciaups.vercel.app/
 - This is my portfolio page
 ![Ceci Au's Portfolio](https://raw.githubusercontent.com/ceciaups/Portfolio/master/images/Portfolio.png)
 

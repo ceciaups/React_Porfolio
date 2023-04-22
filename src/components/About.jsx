@@ -6,7 +6,7 @@ export default function About() {
     <section id="sec-about" className="reveal">
       <h2>Meet <span className="highlight-text">Ceci</span> !</h2>
       <div className="about-container">
-        <img id="about-myimage" src="public/other/about.jpeg" alt="Ceci in the Disneyland"></img>
+        <img id="about-myimage" src="other/about.jpeg" alt="Ceci in the Disneyland"></img>
         <div className="iam-container">
           <h3><span className="highlight-text">I</span> am...</h3>
           <div className="iam-item"><i className="fa-solid fa-thumbs-up"></i>a sudoku k<span className="highlight-text">i</span>ller</div>

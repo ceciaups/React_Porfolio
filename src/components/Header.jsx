@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <div>
         <Link href="#sec-home">
-          <img id="logo" src="public/other/logo.png" alt="Ceci Au's Logo"></img>
+          <img id="logo" src="other/logo.png" alt="Ceci Au's Logo"></img>
         </Link>
       </div>
       <nav>

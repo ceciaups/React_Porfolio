@@ -5,7 +5,7 @@ export default function Projects() {
 
   useEffect(() => {
 		const getData = async () => {
-			const URL = 'http://localhost:5173/public/database/projects.json';
+			const URL = '/database/projects.json';
 			let response = await fetch(URL);
 			let data = await response.json();
 			setData(data);
@@ -35,7 +35,7 @@ export default function Projects() {
     slider.push(
       <li key={"slider-" + project.id}>
         <label htmlFor={"slider-" + project.id}>
-          <img id={"project-" + project.id} className="project" src={"public/" + project.image.substring(23)} alt={"Capture of the program page of " + project.title}></img>
+          <img id={"project-" + project.id} className="project" src={project.image.substring(23)} alt={"Capture of the program page of " + project.title}></img>
         </label>
        </li>
     );

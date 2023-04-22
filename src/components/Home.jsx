@@ -10,12 +10,12 @@ export default function Home() {
           <div className="home-detail"><i className="fa-solid fa-envelope"></i>ceciaups@gmail.com</div>
         </div>
         <div id="home-link">
-          <a className="button" href="public/other/CV_AU_Pui_Sze.pdf" target="_blank">My Resumé</a>
+          <a className="button" href="other/CV_AU_Pui_Sze.pdf" target="_blank">My Resumé</a>
           <a href="https://www.linkedin.com/in/ceciaups/" target="_blank"><i className="fa-brands fa-linkedin-in home-linkedin"></i></a>
           <a href="https://github.com/ceciaups/" target="_blank"><i className="fa-brands fa-github home-github"></i></a>
         </div>
       </div>
-      <img id="home-myimage" src="public/other/myself.png" alt="portrait of myself"></img>
+      <img id="home-myimage" src="other/myself.png" alt="portrait of myself"></img>
     </section>
   )
 }

@@ -5,7 +5,7 @@ export default function Journey() {
 
   useEffect(() => {
 		const getData = async () => {
-			const URL = 'http://localhost:5173/public/database/careers.json';
+			const URL = '/database/careers.json';
 			let response = await fetch(URL);
 			let data = await response.json();
 

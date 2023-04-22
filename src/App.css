@@ -137,7 +137,7 @@ header {
 
 /* 3. HOME STYLES */
 #sec-home {
-  background: no-repeat url(./other/background-landscape.jpg);
+  background: no-repeat url(./background-landscape.jpg);
   background-position: center;
   background-size: cover;
   min-height: max(50em, 50vw);
@@ -407,19 +407,19 @@ header {
   z-index: -1;
 }
 /* .main-humber::after {
-  background-image: url(./other/humber-current.jpeg);
+  background-image: url(./humber-current.jpeg);
 }
 .main-sudoku::after {
-  background-image: url(./other/sudoku.jpeg);
+  background-image: url(./sudoku.jpeg);
 }
 .main-catvsdog::after {
-  background-image: url(./other/catvsdog.jpeg);
+  background-image: url(./catvsdog.jpeg);
 }
 .main-fyp::after {
-  background-image: url(./other/fyp.png);
+  background-image: url(./fyp.png);
 } */
 .main-project::before {
-  content: url(./other/tape.png);
+  content: url(./tape.png);
   transform: scale(.7);
   position: absolute;
   top: -52px;
@@ -705,7 +705,7 @@ footer {
     padding: 1em 0;
   }
   #sec-home {
-    background: no-repeat url(./other/background-portrait.jpg);
+    background: no-repeat url(./background-portrait.jpg);
     background-position: center;
     background-size: cover;
     flex-flow: column-reverse;

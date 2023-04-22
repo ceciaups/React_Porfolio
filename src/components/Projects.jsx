@@ -35,7 +35,7 @@ export default function Projects() {
     slider.push(
       <li key={"slider-" + project.id}>
         <label htmlFor={"slider-" + project.id}>
-          <img id={"project-" + project.id} className="project" src={"public/" + project.image.substring(16)} alt={"Capture of the program page of " + project.title}></img>
+          <img id={"project-" + project.id} className="project" src={"public/" + project.image.substring(23)} alt={"Capture of the program page of " + project.title}></img>
         </label>
        </li>
     );

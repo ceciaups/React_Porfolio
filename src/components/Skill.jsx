@@ -17,7 +17,7 @@ export default function Skill() {
 
   data.forEach((skill) => {
     skills.push(
-      <div key={"skill-" + skill.id} className="skills-item">{skill.name}<img src={"public/" + skill.logo.substring(16)} alt={skill.name +" logo"}></img></div>
+      <div key={"skill-" + skill.id} className="skills-item">{skill.name}<img src={"public/" + skill.logo.substring(23)} alt={skill.name +" logo"}></img></div>
     );
   });
 

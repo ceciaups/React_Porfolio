@@ -1,13 +1,39 @@
+import { useState } from 'react';
+
 export default function Contact() {
 
   // Contact Form Function
-  function sendMail() {
-  }
+
+  const sendMail = (event) => {
+    console.log("sending");
+    const contactForm = document.getElementById("contact-form");
+    console.log();
+    let formData = new FormData();
+    formData.append("fname", contactForm.fname.value);
+    formData.append("femail", contactForm.femail.value);
+    formData.append("fmessage", contactForm.fmessage.value);
+    console.log(formData);
+    fetch("http://localhost:80/api/send", {
+      method: "post",
+      body: formData,
+    })
+      .then(res => {
+        console.log(res);
+        if (res.status === 200)
+          console.log("Email sent!");
+        else if (res.status === 500)
+          console.log("Failed to send email!");
+      })
+      .catch(error => {
+        console.log("Failed to call server!");
+      });
+    return false;
+  };
 
   return (
     <section id="sec-contact" className="reveal">
       <h2>Contact <span className="highlight-text">Me</span></h2>
-      <form action="#" onSubmit={sendMail} id="contact-form" name="contact-form">
+      <form onSubmit={sendMail} id="contact-form" name="contact-form">
         <div className="form-input">
           <input type="text" id="form-name" className="form-content" name="fname" placeholder="Name"></input>
           <span className="tooltip">Please input your name here.</span>

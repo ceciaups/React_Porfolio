@@ -103,6 +103,9 @@ function App() {
     }
   }
 
+  // Contact Form Function
+  const sendMail = () => {};
+
   return (
     <div className="App">
       <BrowserRouter>

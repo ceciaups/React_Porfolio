@@ -4,9 +4,10 @@ const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 const app = express();
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 
-// app.use(express.static(__dirname + "/../"));
+app.use(cors({origin: "https://ceciaups.vercel.app"}));
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',

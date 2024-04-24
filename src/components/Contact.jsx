@@ -5,20 +5,18 @@ export default function Contact() {
   // Contact Form Function
 
   const sendMail = (event) => {
-    console.log("sending");
     const contactForm = document.getElementById("contact-form");
-    console.log();
     let formData = new FormData();
     formData.append("fname", contactForm.fname.value);
     formData.append("femail", contactForm.femail.value);
     formData.append("fmessage", contactForm.fmessage.value);
-    console.log(formData);
+
     fetch("https://ceciaups.vercel.app/api/send", {
       method: "post",
-      body: formData,
+      mode: 'cors',
+      body: formData
     })
       .then(res => {
-        console.log(res);
         if (res.status === 200)
           console.log("Email sent!");
         else if (res.status === 500)
@@ -27,6 +25,7 @@ export default function Contact() {
       .catch(error => {
         console.log("Failed to call server!");
       });
+
     return false;
   };
 

@@ -104,7 +104,10 @@ function App() {
   }
 
   // Contact Form Function
-  const sendMail = () => {};
+  const sendMail = () => {
+
+    return false;
+  };
 
   return (
     <div className="App">

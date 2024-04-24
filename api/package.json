@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "api",
   "version": "1.0.0",
   "description": "Ceci Au's Portfolio",
-  "main": "api/index.js",
+  "main": "index.js",
   "directories": {
     "doc": "docs"
   },

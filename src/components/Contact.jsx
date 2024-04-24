@@ -13,7 +13,7 @@ export default function Contact() {
     formData.append("femail", contactForm.femail.value);
     formData.append("fmessage", contactForm.fmessage.value);
     console.log(formData);
-    fetch("http://localhost:80/api/send", {
+    fetch("https://ceciaups.vercel.app/api/send", {
       method: "post",
       body: formData,
     })
